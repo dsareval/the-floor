@@ -276,6 +276,7 @@ export type Category =
   | "Apps"
   | "Pool Equipment"
   | "Video Games"
+  | "Box Arts";
   ;
 
 /**
@@ -291,6 +292,7 @@ export type Category =
  * `app/categories/registry.ts` -- never index `CATEGORY_METADATA` directly.
  */
 export type CategoryId = Category | (string & {});
+  
 
 export interface FloorData {
   person: string;
@@ -1173,6 +1175,258 @@ const TimesTablesCategory: CategoryMetadata = {
       alternatives: [],
     },
   ],
+};
+const BoxArtsCategory: CategoryMetadata = {
+    name: "Box Arts",
+    folder: "box-arts",
+    examples: [
+        {
+            name: "Death Stranding",
+            image: "death-stranding.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Devil May Cry 3",
+            image: "dmc-3.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Lego Star Wars",
+            image: "lego-star-wars.jpg",
+            alternatives: [],
+        },
+        {
+            name: "GTA IV",
+            image: "gta-iv.png",
+            alternatives: [],
+        },
+        {
+            name: "Kingdom Hearts 2",
+            image: "kingdom-hearts-2.jpg",
+            alternatives: [],
+        },
+        {
+            name: "God of War Ragnarok",
+            image: "god-of-war-ragnarok.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Pokemon Soulsilver",
+            image: "pokemon-soulsilver.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Portal 2",
+            image: "portal-2.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Donkey Kong Country 3",
+            image: "donkey-kong-country-3.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Metroid",
+            image: "metroid.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Super Smash Bros Brawl",
+            image: "super-smash-bros-brawl.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Jak and Daxter",
+            image: "jak-and-daxter.jpg",
+            alternatives: [],
+        },
+        {
+            name: "The Binding of Isaac",
+            image: "the-binding-of-isaac.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Palworld",
+            image: "palworld.jpg",
+            alternatives: [],
+        },
+        {
+            name: "The Legend of Zelda Twilight Princess",
+            image: "the-legend-of-zelda-twilight-princess.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Persona 5",
+            image: "persona-5.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Left 4 Dead",
+            image: "left-4-dead.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Pokemon Blue",
+            image: "pokemon-blue.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Rayman 2",
+            image: "rayman-2.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Tomb Raider",
+            image: "tomb-raider.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Resident Evil 3",
+            image: "resident-evil-3.jpg",
+            alternatives: ["Resident Evil 3 Nemesis"],
+        },
+        {
+            name: "Super Mario World",
+            image: "super-mario-world.png",
+            alternatives: [],
+        },
+        {
+            name: "Assassin's Creed",
+            image: "assassins-creed.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Pokemon Crystal",
+            image: "pokemon-crystal.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Super Mario All-Stars",
+            image: "super-mario-all-stars.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Night in the Woods",
+            image: "night-in-the-woods.png",
+            alternatives: [],
+        },
+        {
+            name: "Amnesia the Dark Descent",
+            image: "amnesia-the-dark-descent.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Fallout 3",
+            image: "fallout-3.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Streets of Rage",
+            image: "streets-of-rage.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Ultimate-Mortal-Kombat-3",
+            image: "ultimate-mortal-kombat-3.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Far Cry 3",
+            image: "far-cry-3.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Dark Souls",
+            image: "dark-souls.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Fifa 23",
+            image: "fifa-23.png",
+            alternatives: [],
+        },
+        {
+            name: "Injustice Gods Among Us",
+            image: "injustice-gods-among-us.jpg",
+            alternatives: ["Injustice"],
+        },
+        {
+            name: "Goat Simulator",
+            image: "goat-simulator.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Warcraft 3",
+            image: "warcraft-3.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Final Fantasy XII",
+            image: "final-fantasy-12.png",
+            alternatives: [],
+        },
+        {
+            name: "Euro Truck Simulator 2",
+            image: "euro-truck-simulator-2.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Call of Duty Infinte Warfare",
+            image: "call-of-duty-infinite-warfare.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Need for Speed Carbon",
+            image: "need-for-speed-carbon.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Tony Hawk's Pro Skater 3",
+            image: "tony-hawks-pro-skater-3.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Resident Evil Zero",
+            image: "resident-evil-zero.jpg",
+            alternatives: [],
+        },
+        {
+            name: "The Last Guardian",
+            image: "the-last-guardian.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Metroid Dread",
+            image: "metroid-dread.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Battlefield-1942",
+            image: "battlefield-1942.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Dead by Daylight",
+            image: "dead-by-daylight.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Prince of Persia",
+            image: "prince-of-persia.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Forza Horizon",
+            image: "forza-horizon.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Quake",
+            image: "quake.jpg",
+            alternatives: [],
+        },
+        // ...more entries
+    ],
 };
 
 const PokemonCategory: CategoryMetadata = {
@@ -10479,4 +10733,5 @@ export const CATEGORY_METADATA: Record<Category, CategoryMetadata> = {
   "Anime": AnimeCategory,
   "Minecraft": MinecraftCategory,
   "EU Flags": EuropeanFlagsCategory,
+  "Box Arts": BoxArtsCategory
 };
