@@ -225,9 +225,7 @@ type UsedCategories = (typeof FLOOR_DATA_CONST)[number]["category"];
 type UnusedCategoriesFromConst = Exclude<Category, UsedCategories>;
 
 export type Category =
-  | "Time Tables"
-  | "Pokemon"
-  | "Fruits"
+  /*| "Time Tables"
   | "Broadway shows"
   | "Disney characters"
   | "Kitchen gadgets"
@@ -240,7 +238,6 @@ export type Category =
   | "Harry Potter characters"
   | "Spirit Halloween Catalogue"
   | "Superheros"
-  | "Video Game Characters"
   | "City Skylines"
   | "Movies"
   | "Books"
@@ -267,16 +264,29 @@ export type Category =
   | "NFL Teams"
   | "NHL Teams"
   | "Sports"
-  | "Valorant"
   | "Anime"
-  | "Minecraft"
   | "EU Flags"
   // | "Chilis" // unused for now
   | "Math"
   | "Apps"
   | "Pool Equipment"
+  */
+  | "Fruits"
+  | "Valorant"
+  | "Minecraft"
+  | "Video Game Characters"
   | "Video Games"
-  | "Box Arts";
+  | "Pokemon"
+  | "Box Arts"
+    | "Smash Bros Specials"
+    | "Gaming Companies"
+    | "Smash Bros Items"
+    | "Smash Bros Assist Trophies"
+    | "Gaming Memes"
+    | "Gaming Maps"
+    | "Gaming Weapons"
+    | "People in Gaming"
+    | "Smash Bros Stages";
   ;
 
 /**
@@ -1176,6 +1186,7 @@ const TimesTablesCategory: CategoryMetadata = {
     },
   ],
 };
+
 const BoxArtsCategory: CategoryMetadata = {
     name: "Box Arts",
     folder: "box-arts",
@@ -1426,6 +1437,2278 @@ const BoxArtsCategory: CategoryMetadata = {
             alternatives: [],
         },
         // ...more entries
+    ],
+};
+
+const GamingCompaniesCategory: CategoryMetadata = {
+    name: "Gaming Companies",
+    folder: "gaming-companies",
+    examples: [
+        {
+            name: "Rare",
+            image: "rare.jpg",
+            alternatives: [],
+        },
+        {
+            name: "NetherRealm Studios",
+            image: "netherrealm.png",
+            alternatives: ["NetherRealm"],
+        },
+        {
+            name: "Capcom",
+            image: "capcom.png",
+            alternatives: [],
+        },
+        {
+            name: "Blizzard",
+            image: "blizzard.png",
+            alternatives: ["Blizzard Entertainment"],
+        },
+        {
+            name: "Xbox",
+            image: "xbox.png",
+            alternatives: [],
+        },
+        {
+            name: "Sega",
+            image: "sega.png",
+            alternatives: [],
+        },
+        {
+            name: "Roblox",
+            image: "roblox.png",
+            alternatives: [],
+        },
+        {
+            name: "EA Sports",
+            image: "ea-sports.png",
+            alternatives: [],
+        },
+        {
+            name: "Steam",
+            image: "steam.png",
+            alternatives: [],
+        },
+        {
+            name: "Konami",
+            image: "konami.png",
+            alternatives: [],
+        },
+        {
+            name: "Aether Studios",
+            image: "aether-studios.png",
+            alternatives: [],
+        },
+        {
+            name: "Square Enix",
+            image: "square-enix.png",
+            alternatives: [],
+        },
+        {
+            name: "Ninja Kiwi",
+            image: "ninja-kiwi.png",
+            alternatives: [],
+        },
+        {
+            name: "Atari",
+            image: "atari.png",
+            alternatives: [],
+        },
+        {
+            name: "Twitch",
+            image: "twitch.png",
+            alternatives: [],
+        },
+        {
+            name: "PlayStation",
+            image: "playstation.png",
+            alternatives: [],
+        },
+        {
+            name: "Riot Games",
+            image: "riot.png",
+            alternatives: ["Riot"],
+        },
+        {
+            name: "Rockstar Games",
+            image: "rockstar.png",
+            alternatives: ["Rockstar"],
+        },
+        {
+            name: "Nintendo",
+            image: "nintendo.png",
+            alternatives: [],
+        },
+        {
+            name: "Naughty Dog",
+            image: "naughty-dog.png",
+            alternatives: [],
+        },
+        {
+            name: "Ubisoft",
+            image: "ubisoft.png",
+            alternatives: [],
+        },
+        {
+            name: "Epic Games",
+            image: "epic.png",
+            alternatives: ["Epic"],
+        },
+        {
+            name: "Bandai Namco",
+            image: "bandai-namco.png",
+            alternatives: ["Namco"],
+        },
+        {
+            name: "Discord",
+            image: "discord.png",
+            alternatives: [],
+        },
+        {
+            name: "Unity",
+            image: "unity.png",
+            alternatives: [],
+        },
+        {
+            name: "The Tetris Company",
+            image: "tetris.png",
+            alternatives: ["Tetris"],
+        },
+        {
+            name: "Valve",
+            image: "valve.png",
+            alternatives: [],
+        },
+        {
+            name: "Midway Games",
+            image: "midway.png",
+            alternatives: ["Midway"],
+        },
+        {
+            name: "Insomniac Games",
+            image: "insomniac.png",
+            alternatives: ["Insomniac"],
+        },
+        {
+            name: "Neversoft",
+            image: "neversoft.png",
+            alternatives: [],
+        },
+        {
+            name: "Koei Tecmo",
+            image: "koei-tecmo.png",
+            alternatives: ["Koei"],
+        },
+        {
+            name: "The New York Times Games",
+            image: "the-new-york-times-games.png",
+            alternatives: [],
+        },
+        {
+            name: "Tencent",
+            image: "tencent.png",
+            alternatives: [],
+        },
+        {
+            name: "King Games",
+            image: "king.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Hudson Soft",
+            image: "hudson.png",
+            alternatives: ["Hudson"],
+        },
+        {
+            name: "Atlus",
+            image: "atlus.png",
+            alternatives: [],
+        },
+        {
+            name: "Activision",
+            image: "activision.png",
+            alternatives: [],
+        },
+        {
+            name: "Next Level Games",
+            image: "next-level.png",
+            alternatives: ["Next Level"],
+        },
+        {
+            name: "Bethesda",
+            image: "bethesda.png",
+            alternatives: [],
+        },
+        {
+            name: "Gameloft",
+            image: "gameloft.png",
+            alternatives: [],
+        },
+        {
+            name: "EB Games",
+            image: "eb-games.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Mihoyo",
+            image: "mihoyo.png",
+            alternatives: [],
+        },
+        {
+            name: "PopCap",
+            image: "popcap.png",
+            alternatives: [],
+        },
+        {
+            name: "Maxis",
+            image: "maxis.png",
+            alternatives: [],
+        },
+        {
+            name: "Innersloth",
+            image: "innersloth.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Game Freak",
+            image: "game-freak.png",
+            alternatives: [],
+        },
+        {
+            name: "Platinum Games",
+            image: "platinum.png",
+            alternatives: ["Platinum"],
+        },
+        {
+            name: "Hal Laboratory",
+            image: "hal-laboratory.png",
+            alternatives: [],
+        },
+        {
+            name: "Unreal Engine",
+            image: "unreal-engine.png",
+            alternatives: [],
+        },
+    ],
+};
+
+const GamingWeaponsCategory: CategoryMetadata = {
+    name: "Gaming Weapons",
+    folder: "gaming-weapons",
+    examples: [
+        {
+            name: "Pulse Pistols (Overwatch)",
+            image: "pulse-pistols.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Hidden Blade (Assassin's Creed)",
+            image: "hidden-blade.png",
+            alternatives: [],
+        },
+        {
+            name: "Pistol (DOOM)",
+            image: "pistol.png",
+            alternatives: [],
+        },
+        {
+            name: "Arm Cannon (Metroid)",
+            image: "arm-cannon.png",
+            alternatives: [],
+        },
+        {
+            name: "Slingshot (The Legend of Zelda)",
+            image: "slingshot.png",
+            alternatives: [],
+        },
+        {
+            name: "Diamond Sword (Minecraft)",
+            image: "diamond-sword.png",
+            alternatives: [],
+        },
+        {
+            name: "Levin Sword (Fire Emblem)",
+            image: "levin-sword.png",
+            alternatives: [],
+        },
+        {
+            name: "Hammer (Donkey Kong)",
+            image: "hammer.png",
+            alternatives: [],
+        },
+        {
+            name: "Monado (Xenoblade)",
+            image: "monado.png",
+            alternatives: [],
+        },
+        {
+            name: "Poltergust 3000 (Luigi's Mansion)",
+            image: "poltergust-3000.png",
+            alternatives: [],
+        },
+        {
+            name: "Star Rod (Kirby)",
+            image: "star-rod.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Shovel Blade (Shovel Knight)",
+            image: "shovel-blade.png",
+            alternatives: [],
+        },
+        {
+            name: "Bomb (The Legend of Zelda)",
+            image: "bomb-the-legend-of-zelda.png",
+            alternatives: [],
+        },
+        {
+            name: "Aperture Science Handheld Portal Device (Portal)",
+            image: "aperture-science-handheld-portal-device.png",
+            alternatives: [],
+        },
+        {
+            name: "Energy Sword (Halo)",
+            image: "energy-sword.png",
+            alternatives: [],
+        },
+        {
+            name: "Mega Buster (Megaman)",
+            image: "mega-buster.png",
+            alternatives: [],
+        },
+        {
+            name: "Master Sword (The Legend of Zelda)",
+            image: "master-sword.png",
+            alternatives: [],
+        },
+        {
+            name: "Splattershot (Splatoon)",
+            image: "splattershot.png",
+            alternatives: [],
+        },
+        {
+            name: "Toaster (ARMS)",
+            image: "toaster.png",
+            alternatives: [],
+        },
+        {
+            name: "Spiny Shell (Mario Kart)",
+            image: "spiny-shell.png",
+            alternatives: [],
+        },
+        {
+            name: "Blade of Chaos (God of War)",
+            image: "blade-of-chaos.png",
+            alternatives: [],
+        },
+        {
+            name: "Keyblade (Kingdom Hearts)",
+            image: "keyblade.png",
+            alternatives: [],
+        },
+        {
+            name: "Buster Sword (Final Fantasy)",
+            image: "buster-sword.png",
+            alternatives: [],
+        },
+        {
+            name: "Pickaxe (Fortnite)",
+            image: "pickaxe.png",
+            alternatives: [],
+        },
+        {
+            name: "Perry (Super Princess Peach)",
+            image: "perry.png",
+            alternatives: [],
+        },
+        {
+            name: "Grenade (Worms)",
+            image: "grenade.png",
+            alternatives: [],
+        },
+        {
+            name: "Lightning Shark (Mario + Rabbids Kingdom Battle)",
+            image: "lightning-shark.png",
+            alternatives: [],
+        },
+        {
+            name: "Sword of the Mighty Warrior (Prince of Persia)",
+            image: "sword-of-the-mighty-warrior.png",
+            alternatives: [],
+        },
+        {
+            name: "Drill (Bioshock)",
+            image: "drill.png",
+            alternatives: [],
+        },
+        {
+            name: "Great Knife (Silent Hill)",
+            image: "great-knife.png",
+            alternatives: [],
+        },
+        {
+            name: "Blaster (Star Fox)",
+            image: "blaster.png",
+            alternatives: [],
+        },
+        {
+            name: "Yoshimitsu/Cursed Blade (Tekken/Soul Calibur)",
+            image: "yoshimitsu-cursed-blade.png",
+            alternatives: [],
+        },
+        {
+            name: "Fruit Bazooka (Crash Bandicoot)",
+            image: "fruit-bazooka.png",
+            alternatives: [],
+        },
+        {
+            name: "Needler (Halo)",
+            image: "needler.png",
+            alternatives: [],
+        },
+        {
+            name: "Fishbones (League of Legends)",
+            image: "fishbones.png",
+            alternatives: [],
+        },
+        {
+            name: "Steel Fans (Mortal Kombat)",
+            image: "steel-fans.png",
+            alternatives: [],
+        },
+        {
+            name: "Claw (Street Figther)",
+            image: "claw.png",
+            alternatives: [],
+        },
+        {
+            name: "Masamune (Final Fantasy)",
+            image: "masamune.png",
+            alternatives: [],
+        },
+        {
+            name: "Ragnell (Fire Emblem)",
+            image: "ragnell.png",
+            alternatives: [],
+        },
+        {
+            name: "Cane (Sly Cooper)",
+            image: "cane.png",
+            alternatives: [],
+        },
+        {
+            name: "Darkin Blade (League of Legends)",
+            image: "darkin-blade.png",
+            alternatives: [],
+        },
+        {
+            name: "Dubstep Gun (Saints Row)",
+            image: "dubstep-gun.png",
+            alternatives: [],
+        },
+        {
+            name: "Bomb (Bomberman)",
+            image: "bomb-bomberman.png",
+            alternatives: [],
+        },
+        {
+            name: "Kunai (Mortal Kombat)",
+            image: "kunai.png",
+            alternatives: [],
+        },
+        {
+            name: "Copper Shortsword (Terraria)",
+            image: "copper-shortsword.png",
+            alternatives: [],
+        },
+        {
+            name: "Zacian's Sword (Pokemon)",
+            image: "zacians-sword.jpeg",
+            alternatives: [],
+        },
+        {
+            name: "Love is Blue (Bayonetta)",
+            image: "love-is-blue.png",
+            alternatives: [],
+        },
+        {
+            name: "Flamethrower (Team Fortress)",
+            image: "flamethrower.png",
+            alternatives: [],
+        },
+        {
+            name: "Classic (Valorant)",
+            image: "classic.png",
+            alternatives: [],
+        },
+    ],
+};
+
+const PeopleInGamingCategory: CategoryMetadata = {
+    name: "People in Gaming",
+    folder: "people-in-gaming",
+    examples: [
+        {
+            name: "Ken (Smasher/Survivor Contestant)",
+            image: "ken.png",
+            alternatives: [],
+        },
+        {
+            name: "Chris Pratt (Voice Actor)",
+            image: "chris-pratt.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Faker (Lol Player)",
+            image: "faker.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Reggie Fils Aime (Former President of Nintendo of America)",
+            image: "reggie-fils-aime.png",
+            alternatives: [],
+        },
+        {
+            name: "Low Tier God (Youtuber)",
+            image: "low-tier-god.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Mang0 (Smasher)",
+            image: "mango.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Geoff Keighley (The Game Awards Host)",
+            image: "geoff-keighley.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Eiji Aonuma (Game Director)",
+            image: "eiji-aonuma.jpeg",
+            alternatives: [],
+        },
+        {
+            name: "IShowSpeed (Streamer)",
+            image: "ishowspeed.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Coney (Streamer)",
+            image: "coney.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Ninja (Streamer)",
+            image: "ninja.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Ludwig (Streamer)",
+            image: "ludwig.jpg",
+            alternatives: [],
+        },
+        {
+            name: "PewDiePie (Youtuber)",
+            image: "pewdiepie.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Charles Martinet (Voice Actor)",
+            image: "charles-martinet.JPG",
+            alternatives: [],
+        },
+        {
+            name: "Shigeru Miyamoto (Game Director)",
+            image: "shigeru-miyamoto.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Dream (Youtuber)",
+            image: "dream.png",
+            alternatives: [],
+        },
+        {
+            name: "Satoru Iwata (Former President of Nintendo)",
+            image: "satoru-iwata.jpg",
+            alternatives: [],
+        },
+        {
+            name: "SonicFox (FGC Player)",
+            image: "sonicfox.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Pokimane (Streamer)",
+            image: "pokimane.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Gimr (Smasher)",
+            image: "gimr.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Hungrybox (Smasher)",
+            image: "hungrybox.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Billy Mitchell (Gamer)",
+            image: "billy-mitchell.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Hideo Kojima (Game Director)",
+            image: "hideo-kojima.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Masahiro Sakurai (Game Director)",
+            image: "masahiro-sakurai.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Matpat (Former Youtuber)",
+            image: "matpat.jpg",
+            alternatives: [],
+        },
+        {
+            name: "David Wise (Composer)",
+            image: "david-wise.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Gabe Newell (President of Valve)",
+            image: "gabe-newell.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Sneaky (Lol cosplayer)",
+            image: "sneaky.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Mightykeef (Youtuber)",
+            image: "mightykeef.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Tsunekazu Ishihara (President of The Pokemon Company)",
+            image: "tsunekazu_ishihara.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Daigo (FGC Player)",
+            image: "daigo.png",
+            alternatives: [],
+        },
+        {
+            name: "Dan Fornace (Game Developer)",
+            image: "dan-fornace.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Helena Taylor (Voice Actress)",
+            image: "helena-taylor.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Koji Kondo (Game Composer)",
+            image: "koji-kondo.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Arslan Ash (FGC Player)",
+            image: "arslan-ash.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Mew2King (Smasher)",
+            image: "mew2king.png",
+            alternatives: [],
+        },
+        {
+            name: "Toby Fox (Game Developer)",
+            image: "toby-fox.png",
+            alternatives: [],
+        },
+        {
+            name: "Katsuhiro Harada (Game Director)",
+            image: "katsuhiro-harada.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Jontron (Youtuber)",
+            image: "jontron.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Bubzia (Speedrunner)",
+            image: "bubzia.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Devon Pritchard (President of Nintendo of America)",
+            image: "devon-pritchard.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Satoshi Tajiri (President of Game Freak)",
+            image: "satoshi-tajiri.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Maximilian Dood (Youtuber)",
+            image: "maximilian-dood.png",
+            alternatives: [],
+        },
+        {
+            name: "Justin Wong (FGC Player)",
+            image: "justin-wong.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Doug Bowser (Former President of Nintendo of America)",
+            image: "doug-bowser.png",
+            alternatives: [],
+        },
+        {
+            name: "MoistCr1tikal/penguinz0 (Youtuber)",
+            image: "moistcr1tikal.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Jack Black (Actor)",
+            image: "jack-black.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Notch (Game Developer)",
+            image: "notch.jpg",
+            alternatives: [],
+        },
+        {
+            name: "John Numbers (Nintendo Champion)",
+            image: "john-numbers.jpg",
+            alternatives: [],
+        },
+    ],
+};
+const SmashBrosStagesCategory: CategoryMetadata = {
+    name: "Smash Bros Stages",
+    folder: "smash-bros-stages",
+    examples: [
+        {
+            name: "New Donk City Hall",
+            image: "new-donk-city-hall.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Temple",
+            image: "temple.png",
+            alternatives: [],
+        },
+        {
+            name: "Fountain of Dreams",
+            image: "fountain-of-dreams.png",
+            alternatives: [],
+        },
+        {
+            name: "Dream Land",
+            image: "dream-land.png",
+            alternatives: [],
+        },
+        {
+            name: "Big Battlefield",
+            image: "big-battlefield.png",
+            alternatives: [],
+        },
+        {
+            name: "Kalos Pokemon League",
+            image: "kalos-pokemon-league.png",
+            alternatives: [],
+        },
+        {
+            name: "Yoshi's Island (Brawl)",
+            image: "yoshis-island-brawl.png",
+            alternatives: [],
+        },
+        {
+            name: "Castle Siege",
+            image: "castle-siege.png",
+            alternatives: [],
+        },
+        {
+            name: "Lylat Cruise",
+            image: "lylat-cruise.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Super Mario Maker",
+            image: "super-mario-maker.png",
+            alternatives: [],
+        },
+        {
+            name: "Northern Cave",
+            image: "northern-cave.png",
+            alternatives: [],
+        },
+        {
+            name: "Tomodachi Life",
+            image: "tomodachi-life.png",
+            alternatives: [],
+        },
+        {
+            name: "Wuhu Island",
+            image: "wuhu-island.png",
+            alternatives: [],
+        },
+        {
+            name: "Kongo Jungle",
+            image: "kongo-jungle.png",
+            alternatives: [],
+        },
+        {
+            name: "Unova Pokemon League",
+            image: "unova-pokemon-league.png",
+            alternatives: [],
+        },
+        {
+            name: "Town and City",
+            image: "town-and-city.png",
+            alternatives: [],
+        },
+        {
+            name: "Pictochat 2",
+            image: "pictochat-2.png",
+            alternatives: ["Pictochat"],
+        },
+        {
+            name: "Mario Bros",
+            image: "mario-bros.png",
+            alternatives: [],
+        },
+        {
+            name: "Flat Zone X",
+            image: "flat-zone-x.png",
+            alternatives: ["Flat Zone"],
+        },
+        {
+            name: "Spring Stadium",
+            image: "spring-stadium.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Gamer",
+            image: "gamer.png",
+            alternatives: [],
+        },
+        {
+            name: "Pac Land",
+            image: "pac-land.png",
+            alternatives: [],
+        },
+        {
+            name: "Port Town Aero Dive",
+            image: "port-town-aero-dive.png",
+            alternatives: [],
+        },
+        {
+            name: "Wily Castle",
+            image: "wily-castle.png",
+            alternatives: [],
+        },
+        {
+            name: "Mute City (SNES)",
+            image: "mute-city.png",
+            alternatives: [],
+        },
+        {
+            name: "Saffron City",
+            image: "saffron-city.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Figure 8 Circuit",
+            image: "figure-8-circuit.png",
+            alternatives: ["Mario Circuit"],
+        },
+        {
+            name: "Green Greens",
+            image: "green-greens.png",
+            alternatives: [],
+        },
+        {
+            name: "Rumble Falls",
+            image: "rumble-falls.png",
+            alternatives: [],
+        },
+        {
+            name: "Jungle Japes",
+            image: "jungle-japes.png",
+            alternatives: [],
+        },
+        {
+            name: "Mushroom Kingom (Melee)",
+            image: "mushroom-kingdom-melee.png",
+            alternatives: [],
+        },
+        {
+            name: "Umbra Clock Tower",
+            image: "umbra-clock-tower.png",
+            alternatives: [],
+        },
+        {
+            name: "Yoshi's Island (Melee)",
+            image: "yoshis-island-melee.png",
+            alternatives: [],
+        },
+        {
+            name: "Shadow Moses Island",
+            image: "shadow-moses-island.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Mario Galaxy",
+            image: "mario-galaxy.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Jungle Hijinxs",
+            image: "jungle-hijinxs.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Duel Zone / Battlefield (N64)",
+            image: "duel-zone.png",
+            alternatives: [],
+        },
+        {
+            name: "Balloon Fight",
+            image: "balloon-fight.png",
+            alternatives: [],
+        },
+        {
+            name: "Brinstar Depths",
+            image: "brinstar-depths.png",
+            alternatives: [],
+        },
+        {
+            name: "Find Mii",
+            image: "find-mii.png",
+            alternatives: [],
+        },
+        {
+            name: "Dream Land (GB)",
+            image: "dream-land-gb.png",
+            alternatives: [],
+        },
+        {
+            name: "Coliseum",
+            image: "coliseum.png",
+            alternatives: [],
+        },
+        {
+            name: "Wrecking Crew",
+            image: "wrecking-crew.png",
+            alternatives: [],
+        },
+        {
+            name: "Big Blue",
+            image: "big-blue.png",
+            alternatives: [],
+        },
+        {
+            name: "Spiral Mountain",
+            image: "spiral-mountain.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Woolly World",
+            image: "woolly-world.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Mushroom Kingdom (N64)",
+            image: "mushroom-kingdom-64.png",
+            alternatives: [],
+        },
+        {
+            name: "King of Fighters Stadium",
+            image: "king-of-fighters-stadium.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Garreg Mach Monastery",
+            image: "garreg-mach-monastery.jpg",
+            alternatives: [],
+        },
+    ],
+};
+
+const GamingMemesCategory: CategoryMetadata = {
+    name: "Gaming Memes",
+    folder: "gaming-memes",
+    examples: [
+        {
+            name: "Determination",
+            image: "determination.png",
+            alternatives: [],
+        },
+        {
+            name: "Theory",
+            image: "theory.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Dangerous",
+            image: "dangerous.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Shit",
+            image: "shit.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Mercy",
+            image: "mercy.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Cake",
+            image: "cake.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Cook",
+            image: "cook.jpeg",
+            alternatives: [],
+        },
+        {
+            name: "Mods",
+            image: "mods.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Princess",
+            image: "princess.png",
+            alternatives: [],
+        },
+        {
+            name: "Wii",
+            image: "wii.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Nintendont",
+            image: "nintendont.jpeg",
+            alternatives: [],
+        },
+        {
+            name: "X",
+            image: "x.png",
+            alternatives: [],
+        },
+        {
+            name: "Homeless",
+            image: "homeless.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Forma",
+            image: "forma.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Gay",
+            image: "gay.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Flying",
+            image: "flying.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Pokemon",
+            image: "pokemon.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Dong",
+            image: "dong.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Played",
+            image: "played.png",
+            alternatives: [],
+        },
+        {
+            name: "Winning",
+            image: "winning.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Nair",
+            image: "nair.png",
+            alternatives: [],
+        },
+        {
+            name: "Haircut",
+            image: "haircut.jpg",
+            alternatives: [],
+        },
+        {
+            name: "That",
+            image: "that.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Hoes",
+            image: "hoes.png",
+            alternatives: [],
+        },
+        {
+            name: "Wae",
+            image: "wae.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Body",
+            image: "body.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Wombo",
+            image: "wombo.png",
+            alternatives: [],
+        },
+        {
+            name: "Breeding",
+            image: "breeding.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Chicken",
+            image: "chicken.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Flint",
+            image: "flint.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Barrel",
+            image: "barrel.png",
+            alternatives: [],
+        },
+        {
+            name: "Kill",
+            image: "kill.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Xbox",
+            image: "xbox.png",
+            alternatives: [],
+        },
+        {
+            name: "EZ",
+            image: "ez.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Tax",
+            image: "tax.png",
+            alternatives: [],
+        },
+        {
+            name: "Animatronics",
+            image: "animatronics.png",
+            alternatives: [],
+        },
+        {
+            name: "Half-life",
+            image: "half-life.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Konami",
+            image: "konami.png",
+            alternatives: [],
+        },
+        {
+            name: "Serious",
+            image: "serious.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Twitch",
+            image: "twitch.png",
+            alternatives: [],
+        },
+        {
+            name: "Faker",
+            image: "faker.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Base",
+            image: "base.png",
+            alternatives: [],
+        },
+        {
+            name: "Sus",
+            image: "sus.jpg",
+            alternatives: [],
+        },
+        {
+            name: "No",
+            image: "no.png",
+            alternatives: [],
+        },
+        {
+            name: "Disliked",
+            image: "disliked.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Evo",
+            image: "evo.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Excuse",
+            image: "excuse.png",
+            alternatives: [],
+        },
+        {
+            name: "Arrow",
+            image: "arrow.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Hop",
+            image: "hop.jpg",
+            alternatives: [],
+        },
+    ],
+};
+
+const GamingMapsCategory: CategoryMetadata = {
+    name: "Gaming Maps",
+    folder: "gaming-maps",
+    examples: [
+        {
+            name: "Dota 2",
+            image: "dota-2.png",
+            alternatives: [],
+        },
+        {
+            name: "Super Mario Bros 3",
+            image: "super-mario-bros-3.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Slay the Spire",
+            image: "slay-the-spire.jpg",
+            alternatives: [],
+        },
+        {
+            name: "San Andreas",
+            image: "san-andreas.png",
+            alternatives: [],
+        },
+        {
+            name: "Super Mario Sluggers",
+            image: "super-mario-sluggers.png",
+            alternatives: [],
+        },
+        {
+            name: "The Legend of Zelda",
+            image: "the-legend-of-zelda.png",
+            alternatives: [],
+        },
+        {
+            name: "Bloons Tower Defense 6",
+            image: "bloons-tower-defense-6.png",
+            alternatives: [],
+        },
+        {
+            name: "Team Fortress 2",
+            image: "team-fortress-2.png",
+            alternatives: [],
+        },
+        {
+            name: "Super Smash Bros Brawl",
+            image: "super-smash-bros-brawl.jpg",
+            alternatives: [],
+        },
+        {
+            name: "The Legend of Zelda: Wind Waker",
+            image: "the-legend-of-zelda-wind-waker.png",
+            alternatives: [],
+        },
+        {
+            name: "Nintendo Land",
+            image: "nintendo-land.png",
+            alternatives: [],
+        },
+        {
+            name: "Donkey Kong Country",
+            image: "donkey-kong-country.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Pokemon Red & Blue",
+            image: "pokemon-red-and-blue.JPG",
+            alternatives: [],
+        },
+        {
+            name: "Pokemon Unite",
+            image: "pokemon-unite.png",
+            alternatives: [],
+        },
+        {
+            name: "Minecraft",
+            image: "minecraft.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Super Mario World",
+            image: "super-mario-world.jpg",
+            alternatives: [],
+        },
+        {
+            name: "League of Legends",
+            image: "league-of-legends.png",
+            alternatives: [],
+        },
+        {
+            name: "Mario Kart 8",
+            image: "mario-kart-8.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Wario Ware: Smooth Moves",
+            image: "wario-ware-smooth-moves.jpg",
+            alternatives: ["Wario Ware"],
+        },
+        {
+            name: "Splatoon",
+            image: "splatoon.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Fortnite",
+            image: "fortnite.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Rhythm Heaven Groove",
+            image: "rhythm-heaven-groove.png",
+            alternatives: ["Beatspell"],
+        },
+        {
+            name: "The Simpsons: Hit & Run",
+            image: "the-simpsons-hit-and-run.png",
+            alternatives: [],
+        },
+        {
+            name: "Shadow of the Colossus",
+            image: "shadow-of-the-colossus.jpg",
+            alternatives: [],
+        },
+        {
+            name: "The Legend of Zelda: Breath of the Wild",
+            image: "the-legend-of-zelda-breath-of-the-wild.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Metal Gear Solid 5",
+            image: "metal-gear-solid-5.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Halo Combat Evolved",
+            image: "halo-combat-evolved.png",
+            alternatives: [],
+        },
+        {
+            name: "Pokemon Mystery Dungeon: Explorers of Sky",
+            image: "pokemon-mystery-dungeon-explorers-of-sky.png",
+            alternatives: ["Pokemon Mystery Dungeon"],
+        },
+        {
+            name: "Crash Team Racing",
+            image: "crash-team-racing.png",
+            alternatives: [],
+        },
+        {
+            name: "Super Meat Boy",
+            image: "super-meat-boy.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Fallout 4",
+            image: "fallout-4.png",
+            alternatives: [],
+        },
+        {
+            name: "Undertale",
+            image: "undertale.png",
+            alternatives: [],
+        },
+        {
+            name: "GTA V",
+            image: "gta-5.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Super Metroid",
+            image: "super-metroid.png",
+            alternatives: [],
+        },
+        {
+            name: "Lego Star Wars",
+            image: "lego-star-wars.png",
+            alternatives: [],
+        },
+        {
+            name: "Hades",
+            image: "hades.png",
+            alternatives: [],
+        },
+        {
+            name: "Red Dead Redemption 2",
+            image: "red-dead-redemption-2.png",
+            alternatives: [],
+        },
+        {
+            name: "Tony Hawk's Pro Skater 4",
+            image: "tony-hawks-pro-skater-4.png",
+            alternatives: [],
+        },
+        {
+            name: "Final Fantasy VII",
+            image: "final-fantasy-7.png",
+            alternatives: [],
+        },
+        {
+            name: "Baldur's Gate 3",
+            image: "baldurs-gate-3.JPG",
+            alternatives: [],
+        },
+        {
+            name: "The Legend of Zelda: Spirit Tracks",
+            image: "the-legend-of-zelda-spirit-tracks.png",
+            alternatives: [],
+        },
+        {
+            name: "Octodad",
+            image: "octodad.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Resident Evil 4",
+            image: "resident-evil-4.jpg",
+            alternatives: [],
+        },
+        {
+            name: "World of Warcraft",
+            image: "world-of-warcraft.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Mario is Missing",
+            image: "mario-is-missing.png",
+            alternatives: [],
+        },
+        {
+            name: "Mario Party Superstars",
+            image: "mario-party-superstars.png",
+            alternatives: [],
+        },
+        {
+            name: "Runescape",
+            image: "runescape.png",
+            alternatives: [],
+        },
+        {
+            name: "Metroid Prime 3",
+            image: "metroid-prime-3.png",
+            alternatives: ["Metroid Prime Corruption"],
+        },
+        {
+            name: "Counter-Strike: Global Offensive",
+            image: "counter-strike-go.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Call of Duty: Black Ops II",
+            image: "call-of-duty-black-ops-2.jpg",
+            alternatives: [],
+        },
+    ],
+};
+
+const SmashBrosAssistTrophiesCategory: CategoryMetadata = {
+    name: "Smash Bros Assist Trophies",
+    folder: "smash-bros-assist-trophies",
+    examples: [
+        {
+            name: "Andross",
+            image: "andross.png",
+            alternatives: [],
+        },
+        {
+            name: "Chain Chomp",
+            image: "chain-chomp.png",
+            alternatives: [],
+        },
+        {
+            name: "Lakitu & Spinies",
+            image: "lakitu.jpg",
+            alternatives: ["Lakitu"],
+        },
+        {
+            name: "Skull Kid",
+            image: "skull-kid.png",
+            alternatives: [],
+        },
+        {
+            name: "Midna",
+            image: "midna.png",
+            alternatives: [],
+        },
+        {
+            name: "Waluigi",
+            image: "waluigi.png",
+            alternatives: [],
+        },
+        {
+            name: "Dark Samus",
+            image: "dark-samus.png",
+            alternatives: [],
+        },
+        {
+            name: "Ashley",
+            image: "ashley.png",
+            alternatives: [],
+        },
+        {
+            name: "Knuckle Joe",
+            image: "knuckle-joe.png",
+            alternatives: [],
+        },
+        {
+            name: "Lyn",
+            image: "lyn.png",
+            alternatives: [],
+        },
+        {
+            name: "Sukapon",
+            image: "sukapon.png",
+            alternatives: [],
+        },
+        {
+            name: "Alucard",
+            image: "alucard.png",
+            alternatives: [],
+        },
+        {
+            name: "Spring Man",
+            image: "spring-man.png",
+            alternatives: [],
+        },
+        {
+            name: "Knuckles",
+            image: "knuckles.png",
+            alternatives: [],
+        },
+        {
+            name: "Nintendog",
+            image: "nintendog.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Tingle",
+            image: "tingle.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Excitebike",
+            image: "excitebike.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Isabelle",
+            image: "isabelle.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Krystal",
+            image: "krystal.png",
+            alternatives: [],
+        },
+        {
+            name: "Infantry and Tanks",
+            image: "infantry-and-tanks.jpg",
+            alternatives: ["Infantry"],
+        },
+        {
+            name: "Rathalos",
+            image: "rathalos.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Starfy",
+            image: "starfy.png",
+            alternatives: [],
+        },
+        {
+            name: "Riki",
+            image: "riki.png",
+            alternatives: [],
+        },
+        {
+            name: "Mr. Resetti",
+            image: "mr-resetti.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Ghirahim",
+            image: "ghirahim.png",
+            alternatives: [],
+        },
+        {
+            name: "Nightmare",
+            image: "nightmare.png",
+            alternatives: [],
+        },
+        {
+            name: "Dr. Kawashima",
+            image: "dr-kawashima.png",
+            alternatives: [],
+        },
+        {
+            name: "Helirin",
+            image: "helirin.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Kapp'n",
+            image: "kappn.png",
+            alternatives: [],
+        },
+        {
+            name: "Black Knight",
+            image: "black-knight.png",
+            alternatives: [],
+        },
+        {
+            name: "Kat & Ana",
+            image: "kat-and-ana.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Jill",
+            image: "jill.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Sheriff",
+            image: "sheriff.png",
+            alternatives: [],
+        },
+        {
+            name: "Dr. Wright",
+            image: "dr-wright.png",
+            alternatives: [],
+        },
+        {
+            name: "Vince",
+            image: "vince.png",
+            alternatives: [],
+        },
+        {
+            name: "Samurai Goroh",
+            image: "samurai-goroh.png",
+            alternatives: [],
+        },
+        {
+            name: "Ghosts (Blinky, Pinky, Inky, Clyde)",
+            image: "ghosts.png",
+            alternatives: [],
+        },
+        {
+            name: "Klaptrap",
+            image: "klaptrap.png",
+            alternatives: [],
+        },
+        {
+            name: "Prince of Sablé/Sable Prince",
+            image: "prince-of-sable.png",
+            alternatives: [],
+        },
+        {
+            name: "Gray Fox",
+            image: "gray-fox.png",
+            alternatives: [],
+        },
+        {
+            name: "Ram MK III",
+            image: "ram-mk-iii.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Akira Yuki",
+            image: "akira-yuki.png",
+            alternatives: ["Akira"],
+        },
+        {
+            name: "Devil",
+            image: "devil.png",
+            alternatives: [],
+        },
+        {
+            name: "Barbara",
+            image: "barbara.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Elec Man",
+            image: "elec-man.png",
+            alternatives: [],
+        },
+        {
+            name: "Arcade Bunny",
+            image: "arcade-bunny.png",
+            alternatives: [],
+        },
+        {
+            name: "Squid Sisters (Callie and Marie)",
+            image: "squid-sisters.png",
+            alternatives: [],
+        },
+        {
+            name: "Flies and Hand",
+            image: "flies-and-hand.jpg",
+            alternatives: ["Flyswatter"],
+        },
+        {
+            name: "Starman",
+            image: "starman.png",
+            alternatives: [],
+        },
+    ],
+};
+
+const SmashBrosItemsCategory: CategoryMetadata = {
+    name: "Smash Bros Items",
+    folder: "smash-bros-items",
+    examples: [
+        {
+            name: "Green Shell",
+            image: "green-shell.png",
+            alternatives: [],
+        },
+        {
+            name: "Cucco",
+            image: "cucco.png",
+            alternatives: [],
+        },
+        {
+            name: "Super Leaf",
+            image: "super-leaf.png",
+            alternatives: [],
+        },
+        {
+            name: "Fan",
+            image: "fan.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Bumper",
+            image: "bumper.png",
+            alternatives: [],
+        },
+        {
+            name: "Poison Mushroom",
+            image: "poison-mushroom.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Maxim Tomato",
+            image: "maxim-tomato.png",
+            alternatives: [],
+        },
+        {
+            name: "Capsule",
+            image: "capsule.png",
+            alternatives: [],
+        },
+        {
+            name: "Lightning Bolt",
+            image: "lightning-bolt.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Pokeball",
+            image: "pokeball.png",
+            alternatives: [],
+        },
+        {
+            name: "Boomerang",
+            image: "boomerang.png",
+            alternatives: [],
+        },
+        {
+            name: "Sandbag",
+            image: "sandbag.png",
+            alternatives: [],
+        },
+        {
+            name: "Super Star",
+            image: "super-star.png",
+            alternatives: [],
+        },
+        {
+            name: "Super Mushroom",
+            image: "super-mushroom.png",
+            alternatives: [],
+        },
+        {
+            name: "Bullet Bill",
+            image: "bullet-bill.png",
+            alternatives: [],
+        },
+        {
+            name: "Crate",
+            image: "crate.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Red Shell",
+            image: "red-shell.png",
+            alternatives: [],
+        },
+        {
+            name: "Pitfall",
+            image: "pitfall.png",
+            alternatives: [],
+        },
+        {
+            name: "Hammer",
+            image: "hammer.png",
+            alternatives: [],
+        },
+        {
+            name: "Pow Block",
+            image: "pow-block.png",
+            alternatives: [],
+        },
+        {
+            name: "Fake Smash Ball",
+            image: "fake-smash-ball.png",
+            alternatives: [],
+        },
+        {
+            name: "Goldem Hammer",
+            image: "golden-hammer.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Smash Ball",
+            image: "smash-ball.png",
+            alternatives: [],
+        },
+        {
+            name: "Screw Attack",
+            image: "screw-attack.png",
+            alternatives: [],
+        },
+        {
+            name: "Rage Blaster",
+            image: "rage-blaster.png",
+            alternatives: [],
+        },
+        {
+            name: "Team Healer",
+            image: "team-healer.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Special Flag",
+            image: "special-flag.png",
+            alternatives: [],
+        },
+        {
+            name: "Lip's Stick",
+            image: "lips-stick.png",
+            alternatives: [],
+        },
+        {
+            name: "Bomber",
+            image: "bomber.png",
+            alternatives: [],
+        },
+        {
+            name: "Beam Sword",
+            image: "beam-sword.png",
+            alternatives: [],
+        },
+        {
+            name: "Killer Eye",
+            image: "killer-eye.png",
+            alternatives: [],
+        },
+        {
+            name: "Fire Bar",
+            image: "fire-bar.png",
+            alternatives: [],
+        },
+        {
+            name: "Flipper",
+            image: "flipper.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Spring",
+            image: "spring.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Back Shield",
+            image: "back-shield.png",
+            alternatives: [],
+        },
+        {
+            name: "Healing Field",
+            image: "healing-field.png",
+            alternatives: [],
+        },
+        {
+            name: "Beehive",
+            image: "beehive.png",
+            alternatives: [],
+        },
+        {
+            name: "Bunny Hood",
+            image: "bunny-hood.png",
+            alternatives: [],
+        },
+        {
+            name: "Cracker Launcher",
+            image: "cracker-launcher.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Metal Box",
+            image: "metal-box.jpg",
+            alternatives: [],
+        },
+        {
+            name: "Ore Club",
+            image: "ore-club.png",
+            alternatives: [],
+        },
+        {
+            name: "Party Ball",
+            image: "party-ball.png",
+            alternatives: [],
+        },
+        {
+            name: "Gooey Bomb",
+            image: "gooey-bomb.png",
+            alternatives: [],
+        },
+        {
+            name: "Dragoon",
+            image: "dragoon.png",
+            alternatives: [],
+        },
+        {
+            name: "Hocotate Bomb",
+            image: "hocotate-bomb.png",
+            alternatives: [],
+        },
+        {
+            name: "Daybreak",
+            image: "daybreak.png",
+            alternatives: [],
+        },
+        {
+            name: "Rocket Belt",
+            image: "rocket-belt.png",
+            alternatives: [],
+        },
+        {
+            name: "Super Launch Star",
+            image: "super-launch-star.png",
+            alternatives: [],
+        },
+        {
+            name: "Death's Scythe",
+            image: "deaths-scythe.png",
+            alternatives: [],
+        },
+    ],
+};
+
+const SmashBrosSpecialsCategory: CategoryMetadata = {
+    name: "Smash Bros Specials",
+    folder: "smash-bros-specials",
+    examples: [
+        {
+            name: "After Burner Kick",
+            image: "after-burner-kick.png",
+            alternatives: [],
+        },
+        {
+            name: "PK Fire",
+            image: "pk-fire.png",
+            alternatives: [],
+        },
+        {
+            name: "Aether",
+            image: "aether.png",
+            alternatives: [],
+        },
+        {
+            name: "Arm Rotor",
+            image: "arm-rotor.png",
+            alternatives: [],
+        },
+        {
+            name: "Nayru's Love",
+            image: "nayrus-love.png",
+            alternatives: [],
+        },
+        {
+            name: "Arcfire",
+            image: "arcfire.png",
+            alternatives: [],
+        },
+        {
+            name: "Alolan Whip",
+            image: "alolan-whip.png",
+            alternatives: [],
+        },
+        {
+            name: "Falcon Punch",
+            image: "falcon-punch.png",
+            alternatives: [],
+        },
+        {
+            name: "Cross",
+            image: "cross.png",
+            alternatives: [],
+        },
+        {
+            name: "Flare Blitz",
+            image: "flare-blitz.png",
+            alternatives: [],
+        },
+        {
+            name: "Pk Freeze",
+            image: "pk-freeze.png",
+            alternatives: [],
+        },
+        {
+            name: "Explosive Flame",
+            image: "explosive-flame.png",
+            alternatives: [],
+        },
+        {
+            name: "Rest",
+            image: "rest.png",
+            alternatives: [],
+        },
+        {
+            name: "Gravitational Pull",
+            image: "gravitational-pull.png",
+            alternatives: [],
+        },
+        {
+            name: "Cross Slash",
+            image: "cross-slash.png",
+            alternatives: [],
+        },
+        {
+            name: "Bouncing Fish",
+            image: "bouncing-fish.png",
+            alternatives: [],
+        },
+        {
+            name: "Grenade Launch",
+            image: "grenade-launch.png",
+            alternatives: [],
+        },
+        {
+            name: "Helicopter Kick",
+            image: "helicopter-kick.png",
+            alternatives: [],
+        },
+        {
+            name: "Elytra",
+            image: "elytra.png",
+            alternatives: [],
+        },
+        {
+            name: "Fireball",
+            image: "fireball.png",
+            alternatives: [],
+        },
+        {
+            name: "Force Palm",
+            image: "force-palm.png",
+            alternatives: [],
+        },
+        {
+            name: "Ptooie",
+            image: "ptooie.png",
+            alternatives: [],
+        },
+        {
+            name: "Dolphin Slash",
+            image: "dolphin-slash.png",
+            alternatives: [],
+        },
+        {
+            name: "Rush Coil",
+            image: "rush-coil.png",
+            alternatives: [],
+        },
+        {
+            name: "Vegetable",
+            image: "vegetable.png",
+            alternatives: [],
+        },
+        {
+            name: "Confusion",
+            image: "confusion.png",
+            alternatives: [],
+        },
+        {
+            name: "Jet Hammer",
+            image: "jet-hammer.png",
+            alternatives: [],
+        },
+        {
+            name: "Devil Fist",
+            image: "devil-fist.png",
+            alternatives: [],
+        },
+        {
+            name: "Whirling Fortress",
+            image: "whirling-fortress.png",
+            alternatives: [],
+        },
+        {
+            name: "Hero's Bow",
+            image: "heros-bow.png",
+            alternatives: [],
+        },
+        {
+            name: "Failnaught",
+            image: "failnaught.png",
+            alternatives: [],
+        },
+        {
+            name: "ARMS Change",
+            image: "arms-change.png",
+            alternatives: [],
+        },
+        {
+            name: "Dr Tornado",
+            image: "dr-tornado.png",
+            alternatives: [],
+        },
+        {
+            name: "Bonus Fruit",
+            image: "bonus-fruit.png",
+            alternatives: [],
+        },
+        {
+            name: "Squall Hammer",
+            image: "squall-hammer.png",
+            alternatives: [],
+        },
+        {
+            name: "Daisy Bomber",
+            image: "daisy-bomber.png",
+            alternatives: [],
+        },
+        {
+            name: "Remote Bomb",
+            image: "remote-bomb.png",
+            alternatives: [],
+        },
+        {
+            name: "Dragon Lunge",
+            image: "dragon-lunge.png",
+            alternatives: [],
+        },
+        {
+            name: "Holy Water",
+            image: "holy-water.png",
+            alternatives: [],
+        },
+        {
+            name: "Winged Pikmin",
+            image: "winged-pikmin.png",
+            alternatives: [],
+        },
+        {
+            name: "Jolt Haymaker",
+            image: "jolt-haymaker.png",
+            alternatives: [],
+        },
+        {
+            name: "Flip Jump",
+            image: "flip-jump.png",
+            alternatives: [],
+        },
+        {
+            name: "Gale Strike",
+            image: "gale-strike.png",
+            alternatives: [],
+        },
+        {
+            name: "Soaring Slash",
+            image: "soaring-slash.png",
+            alternatives: [],
+        },
+        {
+            name: "Blunderbuss",
+            image: "blunderbuss.png",
+            alternatives: [],
+        },
+        {
+            name: "Falco Phantasm",
+            image: "falco-phantasm.png",
+            alternatives: [],
+        },
+        {
+            name: "Space Pirate Rush",
+            image: "space-pirate-rush.png",
+            alternatives: [],
+        },
+        {
+            name: "Timber",
+            image: "timber.png",
+            alternatives: [],
+        },
+        {
+            name: "Mach Tornado",
+            image: "mach-tornado.png",
+            alternatives: [],
+        },
     ],
 };
 
@@ -10682,9 +12965,8 @@ const NhlTeamsCategory: CategoryMetadata = {
 // };
 
 export const CATEGORY_METADATA: Record<Category, CategoryMetadata> = {
-  "Airport Codes": AirportCodesCategory,
+  /*"Airport Codes": AirportCodesCategory,
   "Amusement Parks": AmusementParksCategory,
-  "Fruits": FruitsCategory,
   Apps: AppsCategory,
   "Board games": BoardGamesCategory,
   Books: BooksCategory,
@@ -10715,7 +12997,6 @@ export const CATEGORY_METADATA: Record<Category, CategoryMetadata> = {
   "NFL Teams": NflTeamsCategory,
   "NHL Teams": NhlTeamsCategory,
   "Pop divas": PopDivasCategory,
-  Pokemon: PokemonCategory,
   "Pool Equipment": PoolEquipmentCategory,
   "Reality tv shows": RealityTvShowsCategory,
   "Rom Coms": RomComsCategory,
@@ -10726,12 +13007,24 @@ export const CATEGORY_METADATA: Record<Category, CategoryMetadata> = {
   "Taylor Swift Lyrics": TaylorSwiftLyricsCategory,
   "The Office": TheOfficeCategory,
   Thanksgiving: ThanksgivingCategory,
-  "Video Game Characters": VideoGameCharactersCategory,
-  "Video Games": VideoGamesCategory,
-  "Valorant": ValorantCategory,
   "Time Tables": TimesTablesCategory,
   "Anime": AnimeCategory,
-  "Minecraft": MinecraftCategory,
   "EU Flags": EuropeanFlagsCategory,
-  "Box Arts": BoxArtsCategory
+  */
+    "Fruits": FruitsCategory,
+    "Video Game Characters": VideoGameCharactersCategory,
+    "Video Games": VideoGamesCategory,
+    "Valorant": ValorantCategory,
+    Pokemon: PokemonCategory,
+    "Minecraft": MinecraftCategory,
+    "Box Arts": BoxArtsCategory,
+    "Smash Bros Specials": SmashBrosSpecialsCategory,
+    "Gaming Companies": GamingCompaniesCategory,
+    "Smash Bros Items": SmashBrosItemsCategory,
+    "Smash Bros Assist Trophies": SmashBrosAssistTrophiesCategory,
+    "Gaming Memes": GamingMemesCategory,
+    "Gaming Maps": GamingMapsCategory,
+    "Gaming Weapons": GamingWeaponsCategory,
+    "People in Gaming": PeopleInGamingCategory,
+    "Smash Bros Stages": SmashBrosStagesCategory
 };
