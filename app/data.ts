@@ -225,7 +225,7 @@ type UsedCategories = (typeof FLOOR_DATA_CONST)[number]["category"];
 type UnusedCategoriesFromConst = Exclude<Category, UsedCategories>;
 
 export type Category =
-  /*| "Time Tables"
+  /*
   | "Broadway shows"
   | "Disney characters"
   | "Kitchen gadgets"
@@ -271,6 +271,7 @@ export type Category =
   | "Apps"
   | "Pool Equipment"
   */
+    | "Time Tables"
   | "Fruits"
   | "Valorant"
   | "Minecraft"
@@ -286,6 +287,8 @@ export type Category =
     | "Gaming Maps"
     | "Gaming Weapons"
     | "People in Gaming"
+    | "Fortnite Outfits"
+    | "Fighting Game Characters"
     | "Smash Bros Stages";
   ;
 
@@ -1687,6 +1690,263 @@ const GamingCompaniesCategory: CategoryMetadata = {
         {
             name: "Unreal Engine",
             image: "unreal-engine.png",
+            alternatives: [],
+        },
+    ],
+};
+
+const FightingGameCharactersCategory: CategoryMetadata = {
+    name: "Fighting Game Characters",
+    folder: "fighting-game-characters",
+    examples: [
+        {
+            name: "Bridget (Guilty Gear)",
+            image: "bridget.png",
+            alternatives: [],
+        },
+        {
+            name: "Ken Masters (Street Fighter)",
+            image: "ken.png",
+            alternatives: [],
+        },
+        {
+            name: "Nina Williams (Tekken)",
+            image: "nina-williams.png",
+            alternatives: [],
+        },
+        {
+            name: "Terminator (Mortal Kombat)",
+            image: "terminator.png",
+            alternatives: [],
+        },
+        {
+            name: "Zangief (Street Fighter)",
+            image: "zangief.png",
+            alternatives: [],
+        },
+        {
+            name: "Sonya Blade (Mortal Kombat)",
+            image: "sonya.png",
+            alternatives: [],
+        },
+        {
+            name: "Kazuya Mishima (Tekken)",
+            image: "kazuya-mishima.png",
+            alternatives: [],
+        },
+        {
+            name: "Terry Bogard (King of Fighters)",
+            image: "terry-bogard.png",
+            alternatives: [],
+        },
+        {
+            name: "Akuma (Street Fighter)",
+            image: "akuma.png",
+            alternatives: [],
+        },
+        {
+            name: "Raiden (Mortal Kombat)",
+            image: "raiden.png",
+            alternatives: [],
+        },
+        {
+            name: "Jack 8 (Tekken)",
+            image: "jack.png",
+            alternatives: ["Jack"],
+        },
+        {
+            name: "Faust (Guilty Gear)",
+            image: "faust.png",
+            alternatives: [],
+        },
+        {
+            name: "Bo Rai Cho (Mortal Kombat)",
+            image: "bo-rai-cho.png",
+            alternatives: [],
+        },
+        {
+            name: "Heishiro Mitsurugi (Soul Calibur)",
+            image: "heishiro-mitsurigi.png",
+            alternatives: [],
+        },
+        {
+            name: "A.B.A (Guilty Gear)",
+            image: "aba.png",
+            alternatives: [],
+        },
+        {
+            name: "Dudley (Street Fighter)",
+            image: "dudley.png",
+            alternatives: [],
+        },
+        {
+            name: "Narmaya (Granblue)",
+            image: "narmaya.png",
+            alternatives: [],
+        },
+        {
+            name: "Yun (Street Fighter)",
+            image: "yun.png",
+            alternatives: [],
+        },
+        {
+            name: "Zack (Dead or Alive)",
+            image: "zack.png",
+            alternatives: [],
+        },
+        {
+            name: "Orochi (King of Fighters)",
+            image: "orochi.png",
+            alternatives: [],
+        },
+        {
+            name: "Jun Kazama (Tekken)",
+            image: "jun-kazama.png",
+            alternatives: ["Jun"],
+        },
+        {
+            name: "Shinnok (Mortal Kombat)",
+            image: "shinnok.png",
+            alternatives: [],
+        },
+        {
+            name: "Elena (Street Fighter)",
+            image: "elena.png",
+            alternatives: [],
+        },
+        {
+            name: "Noctis (Tekken)",
+            image: "noctis.png",
+            alternatives: [],
+        },
+        {
+            name: "Ryuji Yamazaki (King of Fighters)",
+            image: "ryuji-yamazaki.png",
+            alternatives: ["Ryuji"],
+        },
+        {
+            name: "Marshall Law (Tekken)",
+            image: "marshall-law.png",
+            alternatives: [],
+        },
+        {
+            name: "Rashid (Street Fighter)",
+            image: "rashid.png",
+            alternatives: [],
+        },
+        {
+            name: "Taven (Mortal Kombat)",
+            image: "taven.png",
+            alternatives: [],
+        },
+        {
+            name: "Abigail (Street Fighter)",
+            image: "abigail.png",
+            alternatives: [],
+        },
+        {
+            name: "Clark Still (King of Fighers)",
+            image: "clark-still.png",
+            alternatives: [],
+        },
+        {
+            name: "Sektor (Mortal Kombat)",
+            image: "sektor.png",
+            alternatives: [],
+        },
+        {
+            name: "Ivy (Soul Calibur)",
+            image: "ivy.png",
+            alternatives: [],
+        },
+        {
+            name: "Siegfried (Granblue)",
+            image: "siegfried.png",
+            alternatives: [],
+        },
+        {
+            name: "Makoto (Street Fighter)",
+            image: "makoto.png",
+            alternatives: [],
+        },
+        {
+            name: "Jinpachi Mishima (Tekken)",
+            image: "jinpachi-mishima.png",
+            alternatives: [],
+        },
+        {
+            name: "Jack-O' Valentine (Guilty Gear)",
+            image: "jack-o-valentine.png",
+            alternatives: [],
+        },
+        {
+            name: "Lucky Chloe (Tekken)",
+            image: "lucky-chloe.png",
+            alternatives: [],
+        },
+        {
+            name: "Tiger Jackson (Tekken)",
+            image: "tiger-jackson.png",
+            alternatives: [],
+        },
+        {
+            name: "Brian Battler (King of Fighters)",
+            image: "brian-battler.png",
+            alternatives: [],
+        },
+        {
+            name: "Adon (Street Fighter)",
+            image: "adon.png",
+            alternatives: [],
+        },
+        {
+            name: "Riptor (Killer Instinct)",
+            image: "riptor.png",
+            alternatives: [],
+        },
+        {
+            name: "Ayane (Dead or Alive)",
+            image: "ayane.png",
+            alternatives: [],
+        },
+        {
+            name: "Kasumi (Dead or Alive)",
+            image: "kasumi.png",
+            alternatives: [],
+        },
+        {
+            name: "Sabrewulf (Killer Instinct)",
+            image: "sabrewulf.png",
+            alternatives: [],
+        },
+        {
+            name: "Akira (Street Fighter)",
+            image: "akira.png",
+            alternatives: [],
+        },
+        {
+            name: "Goro (Mortal Kombat)",
+            image: "goro.png",
+            alternatives: [],
+        },
+        {
+            name: "Nightwolf (Mortal Kombat)",
+            image: "nightwolf.png",
+            alternatives: [],
+        },
+        {
+            name: "Miharu Hirano (Tekken)",
+            image: "miharu-hirano.png",
+            alternatives: [],
+        },
+        {
+            name: "Axl Low (Guilty Gear)",
+            image: "axl-low.png",
+            alternatives: [],
+        },
+        {
+            name: "Gargos (Killer Instinct)",
+            image: "gargos.png",
             alternatives: [],
         },
     ],
@@ -3208,6 +3468,258 @@ const SmashBrosAssistTrophiesCategory: CategoryMetadata = {
     ],
 };
 
+const FortniteOutfitsCategory: CategoryMetadata = {
+    name: "Fortnite Outfits",
+    folder: "fortnite-outfits",
+    examples: [
+        {
+            name: "Kakashi Hatake (Naruto)",
+            image: "kakashi-hatake.png",
+            alternatives: [],
+        },
+        {
+            name: "Batman (DC Comics)",
+            image: "batman.png",
+            alternatives: [],
+        },
+        {
+            name: "Ant Man (Marvel Comics)",
+            image: "ant-man.png",
+            alternatives: [],
+        },
+        {
+            name: "Shaquille O'Neal (Basketball Player)",
+            image: "shaquille-o-neal.png",
+            alternatives: [],
+        },
+        {
+            name: "Ice Spice (Rapper)",
+            image: "ice-spice.png",
+            alternatives: [],
+        },
+        {
+            name: "Mr. Incredible (The Incredibles)",
+            image: "mr-incredible.png",
+            alternatives: [],
+        },
+        {
+            name: "Bulma (Dragon Ball)",
+            image: "bulma.png",
+            alternatives: [],
+        },
+        {
+            name: "Kim Kardashian (Celebrity)",
+            image: "kim-kardashian.png",
+            alternatives: [],
+        },
+        {
+            name: "The Weeknd (Singer)",
+            image: "the-weeknd.png",
+            alternatives: [],
+        },
+        {
+            name: "Jason (Horror Movie)",
+            image: "jason.png",
+            alternatives: [],
+        },
+        {
+            name: "Doctor Doom (Marvel Comics)",
+            image: "doctor-doom.png",
+            alternatives: [],
+        },
+        {
+            name: "Harley Quinn (DC Comics)",
+            image: "harley-quinn.png",
+            alternatives: [],
+        },
+        {
+            name: "Aang (Avatar)",
+            image: "aang.png",
+            alternatives: [],
+        },
+        {
+            name: "She-Venom (Marvel Comics)",
+            image: "she-venom.png",
+            alternatives: [],
+        },
+        {
+            name: "LeBron James (Basketball Player)",
+            image: "lebron-james.png",
+            alternatives: [],
+        },
+        {
+            name: "Thanos (Marvel Comics)",
+            image: "thanos.png",
+            alternatives: [],
+        },
+        {
+            name: "Spider-Man (Marvel Comics)",
+            image: "spider-man.png",
+            alternatives: [],
+        },
+        {
+            name: "Morty (Rick and Morty)",
+            image: "morty.png",
+            alternatives: [],
+        },
+        {
+            name: "Terminator (Action Movie)",
+            image: "terminator.png",
+            alternatives: [],
+        },
+        {
+            name: "Jar Jar Binks (Star Wars)",
+            image: "jar-jar-binks.png",
+            alternatives: [],
+        },
+        {
+            name: "Finn the Human (Adventure Time)",
+            image: "finn-the-human.png",
+            alternatives: [],
+        },
+        {
+            name: "Front Man (Squid Games)",
+            image: "front-man.png",
+            alternatives: [],
+        },
+        {
+            name: "Maleficent (Sleeping Beauty)",
+            image: "maleficent.png",
+            alternatives: [],
+        },
+        {
+            name: "Billie Eilish (Singer)",
+            image: "billie-eilish.png",
+            alternatives: [],
+        },
+        {
+            name: "Bart Simpson (The Simpsons)",
+            image: "bart-simpson.png",
+            alternatives: [],
+        },
+        {
+            name: "The Flash (DC Comics)",
+            image: "the-flash.png",
+            alternatives: [],
+        },
+        {
+            name: "Green Goblin (Marvel Comics)",
+            image: "green-goblin.png",
+            alternatives: [],
+        },
+        {
+            name: "Mandalorian (Star Wars)",
+            image: "mandalorian.png",
+            alternatives: [],
+        },
+        {
+            name: "Blue Ranger (Power Rangers)",
+            image: "blue-ranger.png",
+            alternatives: [],
+        },
+        {
+            name: "Catwoman (DC Comics)",
+            image: "catwoman.png",
+            alternatives: [],
+        },
+        {
+            name: "Mad Moxxi (Borderlands)",
+            image: "mad-moxxi.png",
+            alternatives: [],
+        },
+        {
+            name: "Mister Terrific (DC Comics)",
+            image: "mister-terrific.png",
+            alternatives: [],
+        },
+        {
+            name: "Cyborg (DC Comics)",
+            image: "cyborg.png",
+            alternatives: [],
+        },
+        {
+            name: "Rey (Star Wars)",
+            image: "rey.png",
+            alternatives: [],
+        },
+        {
+            name: "The Kid LAROI (Singer)",
+            image: "the-kid-laroi.png",
+            alternatives: [],
+        },
+        {
+            name: "T-60 Power Armor (Fallout)",
+            image: "t-60-power-armor.png",
+            alternatives: [],
+        },
+        {
+            name: "Orochimaru (Naruto)",
+            image: "orochimaru.png",
+            alternatives: [],
+        },
+        {
+            name: "Mira (KPop Demon Hunters)",
+            image: "mira.png",
+            alternatives: [],
+        },
+        {
+            name: "Snake Eyes (G.I. Joe)",
+            image: "snake-eyes.png",
+            alternatives: [],
+        },
+        {
+            name: "Giannis Antetokounmpo (Basketball Player)",
+            image: "giannis-antetokounmpo.png",
+            alternatives: [],
+        },
+        {
+            name: "Bianca Belair (Professional Wrestler)",
+            image: "bianca-belair.png",
+            alternatives: [],
+        },
+        {
+            name: "Ochaco Uraraka (My Hero Academia)",
+            image: "ochaco-uraraka.png",
+            alternatives: [],
+        },
+        {
+            name: "Karol G (Singer)",
+            image: "karol-g.png",
+            alternatives: [],
+        },
+        {
+            name: "Spider-Man Noir (Marvel Comics)",
+            image: "spider-man-noir.png",
+            alternatives: [],
+        },
+        {
+            name: "Clix (Fortnite Streamer)",
+            image: "clix.png",
+            alternatives: [],
+        },
+        {
+            name: "Uryu Ishida (Bleach)",
+            image: "uryu-ishida.png",
+            alternatives: [],
+        },
+        {
+            name: "Shoto Todoroki (My Hero Academia)",
+            image: "shoto-todoroki.png",
+            alternatives: [],
+        },
+        {
+            name: "El Chapulin Colorado (Mexican Superhero)",
+            image: "el-chapulin-colorado.png",
+            alternatives: [],
+        },
+        {
+            name: "Guy Manuel (Daft Punk)",
+            image: "guy-manuel.png",
+            alternatives: ["Daft Punk"],
+        },
+    ],
+};
+
 const SmashBrosItemsCategory: CategoryMetadata = {
     name: "Smash Bros Items",
     folder: "smash-bros-items",
@@ -3715,7 +4227,257 @@ const SmashBrosSpecialsCategory: CategoryMetadata = {
 const PokemonCategory: CategoryMetadata = {
   name: "Pokemon",
   folder: "pokemon",
-  examples: [
+    examples: [
+        {
+            name: "Marshtomp",
+            image: "marshtomp.png",
+            alternatives: [],
+        },
+        {
+            name: "Kingdra",
+            image: "kingdra.png",
+            alternatives: [],
+        },
+        {
+            name: "Mega Rayquaza",
+            image: "mega-rayquaza.png",
+            alternatives: ["Rayquaza"],
+        },
+        {
+            name: "Heracross",
+            image: "heracross.png",
+            alternatives: [],
+        },
+        {
+            name: "Pombon",
+            image: "pombon.png",
+            alternatives: [],
+        },
+        {
+            name: "Smeargle",
+            image: "smeargle.png",
+            alternatives: [],
+        },
+        {
+            name: "Totodile",
+            image: "totodile.png",
+            alternatives: [],
+        },
+        {
+            name: "Quagsire",
+            image: "quagsire.png",
+            alternatives: [],
+        },
+        {
+            name: "Lugia",
+            image: "lugia.png",
+            alternatives: [],
+        },
+        {
+            name: "Crowned Shield Zamazenta",
+            image: "crowned-shield-zamazenta.png",
+            alternatives: ["Zamazenta"],
+        },
+        {
+            name: "Magmortar",
+            image: "magmortar.png",
+            alternatives: [],
+        },
+        {
+            name: "Pancham",
+            image: "pancham.png",
+            alternatives: [],
+        },
+        {
+            name: "Gloom",
+            image: "gloom.png",
+            alternatives: [],
+        },
+        {
+            name: "Stunky",
+            image: "stunky.png",
+            alternatives: [],
+        },
+        {
+            name: "Kilowattrel",
+            image: "kilowattrel.png",
+            alternatives: [],
+        },
+        {
+            name: "Anorith",
+            image: "anorith.png",
+            alternatives: [],
+        },
+        {
+            name: "Celesteela",
+            image: "celesteela.png",
+            alternatives: [],
+        },
+        {
+            name: "Noibat",
+            image: "noibat.png",
+            alternatives: [],
+        },
+        {
+            name: "Natu",
+            image: "natu.png",
+            alternatives: [],
+        },
+        {
+            name: "Azelf",
+            image: "azelf.png",
+            alternatives: [],
+        },
+        {
+            name: "Scraggy",
+            image: "scraggy.png",
+            alternatives: [],
+        },
+        {
+            name: "Dragapult",
+            image: "dragapult.png",
+            alternatives: [],
+        },
+        {
+            name: "Yamper",
+            image: "yamper.png",
+            alternatives: [],
+        },
+        {
+            name: "Larvitar",
+            image: "larvitar.png",
+            alternatives: [],
+        },
+        {
+            name: "Cresselia",
+            image: "cresselia.png",
+            alternatives: [],
+        },
+        {
+            name: "Tangrowth",
+            image: "tangrowth.png",
+            alternatives: [],
+        },
+        {
+            name: "Sneasel (Hisuian)",
+            image: "hisuian-sneasel.png",
+            alternatives: ["Sneasel"],
+        },
+        {
+            name: "Carnivine",
+            image: "carnivine.png",
+            alternatives: [],
+        },
+        {
+            name: "Huntail",
+            image: "huntail.png",
+            alternatives: [],
+        },
+        {
+            name: "Sewaddle",
+            image: "sewaddle.png",
+            alternatives: [],
+        },
+        {
+            name: "Gossifleur",
+            image: "gossifleur.png",
+            alternatives: [],
+        },
+        {
+            name: "Dunsparce",
+            image: "dunsparce.png",
+            alternatives: [],
+        },
+        {
+            name: "Timburr",
+            image: "timburr.png",
+            alternatives: [],
+        },
+        {
+            name: "Munna",
+            image: "munna.png",
+            alternatives: [],
+        },
+        {
+            name: "Foongus",
+            image: "foongus.png",
+            alternatives: [],
+        },
+        {
+            name: "Braviary",
+            image: "braviary.png",
+            alternatives: [],
+        },
+        {
+            name: "Phione",
+            image: "phione.png",
+            alternatives: [],
+        },
+        {
+            name: "Bronzong",
+            image: "bronzong.png",
+            alternatives: [],
+        },
+        {
+            name: "Gogoat",
+            image: "gogoat.png",
+            alternatives: [],
+        },
+        {
+            name: "Tynamo",
+            image: "tynamo.png",
+            alternatives: [],
+        },
+        {
+            name: "Dreepy",
+            image: "dreepy.png",
+            alternatives: [],
+        },
+        {
+            name: "Cutiefly",
+            image: "cutiefly.png",
+            alternatives: [],
+        },
+        {
+            name: "Copperajah",
+            image: "copperajah.png",
+            alternatives: [],
+        },
+        {
+            name: "Araquanid",
+            image: "araquanid.png",
+            alternatives: [],
+        },
+        {
+            name: "Mega Salamence",
+            image: "mega-salamence.png",
+            alternatives: ["Salamence"],
+        },
+        {
+            name: "Bibarel",
+            image: "bibarel.png",
+            alternatives: [],
+        },
+        {
+            name: "Drilbur",
+            image: "drilbur.png",
+            alternatives: [],
+        },
+        {
+            name: "Mega Aggron",
+            image: "mega-aggron.png",
+            alternatives: [],
+        },
+        {
+            name: "Skuntank",
+            image: "skuntank.png",
+            alternatives: [],
+        },
+        {
+            name: "Floragato",
+            image: "floragato.png",
+            alternatives: [],
+        },
     {
       name: "Pikachu",
       image: "pikachu.png",
@@ -13007,10 +13769,10 @@ export const CATEGORY_METADATA: Record<Category, CategoryMetadata> = {
   "Taylor Swift Lyrics": TaylorSwiftLyricsCategory,
   "The Office": TheOfficeCategory,
   Thanksgiving: ThanksgivingCategory,
-  "Time Tables": TimesTablesCategory,
   "Anime": AnimeCategory,
   "EU Flags": EuropeanFlagsCategory,
   */
+    "Time Tables": TimesTablesCategory,
     "Fruits": FruitsCategory,
     "Video Game Characters": VideoGameCharactersCategory,
     "Video Games": VideoGamesCategory,
@@ -13026,5 +13788,7 @@ export const CATEGORY_METADATA: Record<Category, CategoryMetadata> = {
     "Gaming Maps": GamingMapsCategory,
     "Gaming Weapons": GamingWeaponsCategory,
     "People in Gaming": PeopleInGamingCategory,
+    "Fortnite Outfits": FortniteOutfitsCategory,
+    "Fighting Game Characters": FightingGameCharactersCategory,
     "Smash Bros Stages": SmashBrosStagesCategory
 };
